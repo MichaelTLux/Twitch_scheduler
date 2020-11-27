@@ -1,15 +1,15 @@
 const {Builder, By, until} = require('selenium-webdriver');
+const config = require('config');
 
-const username = process.env.twitch_username;
-const password = process.env.twitch_password;
+const username = config.get('username');
+const password = config.get('password');
 
 const seconds = (count) => count * 1000;
 const minutes = (count) => seconds(count * 60);
 const hours= (count) => minutes(count * 60);
 
 if(!username || !password || username==="placeholder" || password==="placeholder") {
-    console.log("please include your username and password in the environment variables");
-    console.log("twitch_username=\"JohnDoe\" twitch_password=\"superSecret\" npm run start\n");
+    console.log("please include your username and password config/default.js");
     return;
 }
 

@@ -4,6 +4,7 @@
   "description": "steps for setting up in windows task scheduler",
   "main": "index.js",
   "dependencies": {
+    "config": "^3.3.3",
     "selenium-webdriver": "^4.0.0-alpha.7"
   },
   "devDependencies": {},
