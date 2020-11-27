@@ -13,8 +13,6 @@ if(!username || !password || username==="placeholder" || password==="placeholder
     return;
 }
 
-process.env.geckodriver = '../lib/geckodriver.exe';
-
 const loginAndWatchStream = async (stream) => {
     let driver = await new Builder().forBrowser('firefox').build();
     try {
