@@ -1,0 +1,24 @@
+{
+  "name": "twitch_scheduler",
+  "version": "1.0.0",
+  "description": "steps for setting up in windows task scheduler",
+  "main": "index.js",
+  "dependencies": {
+    "selenium-webdriver": "^4.0.0-alpha.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node src/loginAndView.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichaelTLux/Twitch_scheduler.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MichaelTLux/Twitch_scheduler/issues"
+  },
+  "homepage": "https://github.com/MichaelTLux/Twitch_scheduler#readme"
+}
