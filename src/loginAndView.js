@@ -20,6 +20,7 @@ const loginAndWatchStream = async (stream) => {
         await driver.findElement(By.id('login-username')).sendKeys(username);
         await driver.findElement(By.id('password-input')).sendKeys(password);
         await driver.findElement(By.css('button[data-a-target="passport-login-button"]')).click();
+        await driver.wait(until.titleIs('Twitch'), hours(1));
         await driver.get(`https://www.twitch.tv/${stream}`);
         await driver.wait(until.titleIs('text that will never appear'), hours(1));
     } catch (error) {
